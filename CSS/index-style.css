@@ -8,14 +8,20 @@
 
 body
 {
-    background-color: cornsilk;
+    background-color: var(--gray);
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 :root
 {
     --white: rgb(255, 255, 255);
-    --red: rgb(138, 37, 38);
+    --red: rgb(155, 16, 16);
+    --shadow-color: rgba(10, 12, 56, 0.63);
+    --shadow-color-gray: rgb(230, 230, 230);
+    --gray: rgb(242, 242, 242);
+    --gray2: rgb(77, 77, 77);
+    --gray3: rgb(102, 102, 102);
 }
 
 .header .navbar
@@ -27,6 +33,9 @@ body
     align-items: center;
     margin: 0 auto;
     background-color: var(--white);
+    box-shadow: 0px 8px 14px -3px var(--shadow-color);
+    -webkit-box-shadow: 0px 8px 14px -3px var(--shadow-color);
+    -moz-box-shadow: 0px 8px 14px -3px var(--shadow-color);
 }
 
 .header .navbar .cont-logo
@@ -82,9 +91,27 @@ body
     background-color: var(--red);
 }
 
-.menu-link:hover
+.menu-link span
 {
+    position: relative;
+    z-index: 1;
+}
+
+.menu-link::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
     background-color: var(--red);
+    transition: height 0.5s;
+}
+
+.menu-link:hover::before
+{
+   height: 100%;
 }
 
 .menu-link--inside
@@ -105,6 +132,7 @@ body
     display: flex;
     height: 100%;
     align-items: center;
+    position: relative;
 }
 
 .menu-hamburguer
@@ -122,20 +150,219 @@ body
     display: block;
     font-size: 2em;
 }
-/* .header .navbar .btn-cont
+
+/* SECTION COVER ========================================================================================================== */
+.cover
 {
-    margin-right: 3em;
-    width: 15vw;
-    font-size: 1.5em;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    height: 91vh;
+    color: var(--gray2);
 }
 
-.header .navbar .btn-cont .modelos i
+/* SECTION PRODUCTS ========================================================================================================== */
+.products
 {
-    margin-left: 1em;
-    font-size: 0.7rem;
-} */
+    background-color: var(--white);
+    height: 320vh;
+
+}
+
+.products .btn-products
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.products .btn
+{
+    background-color: var(--gray);
+    border-radius: 5px;
+    width: 15%;
+    margin: 0 5px;
+}
+
+.products .btn a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--gray2);
+    transition: 0.5s;
+}
+
+.products .btn:hover .btn-a
+{
+    background-color: var(--red);
+    color: var(--white);
+    transform: scale(1.3);
+    box-shadow: 0px -7px 17px -4px var(--shadow-color);
+    -webkit-box-shadow: 0px -7px 17px -4px var(--shadow-color);
+    -moz-box-shadow: 0px -7px 17px -4px var(--shadow-color);
+}
+
+.products .btn img
+{
+    width: 150px;    
+}
+
+/* SECTION MOST SOLD AND PRODUCTS ========================================================================================================== */
+.products .most-sold
+{
+    margin-top: 8%;
+}
+
+.products .most-sold .title-ms
+{
+    font-size: 5em;
+    margin-left: 10%;
+    color: var(--gray2);
+}
+
+.products .most-sold .product
+{
+    display: flex;
+    flex-direction: row;
+    padding: 3% 5%;
+    margin: 3% 8% 5% 8%;
+    height: 80vh;
+    background-color: var(--gray);
+    transition: 0.5s;
+}
+
+.products .most-sold .product .info .title-product
+{
+    font-size: 5em;
+    color: var(--gray3);
+}
+
+.products .most-sold .product .info .info-product
+{
+    font-size: 1.4em;
+    color: var(--gray2);
+}
+
+.products .most-sold .product .info
+{
+    width: 50%;
+}
+
+.products .most-sold .product .info .specs
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    font-size: 0.8em;
+}
+
+.products .most-sold .product .info .specs .item-info
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 14%;
+    margin: 0% 5% 4% 5%;
+    color: var(--gray2);
+}
+
+.products .most-sold .product .info .specs .item-info span
+{
+    text-align: center;
+}
+
+.products .most-sold .product .info .specs .item-info img
+{
+    width: 90%;
+}
+
+.products .most-sold .product .info .btn-product
+{
+    margin: auto;
+    width: 30%;
+    height: 8%;
+    border-radius: 10px;
+    padding-top: 1.5%;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.products .most-sold .product .info .btn-product a
+{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-size: 1.4em;
+    color: var(--gray2);
+    transition: 0.5s;
+}
+
+.products .most-sold .product:hover
+{
+    background-color: var(--white);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 32px -2px var(--shadow-color);
+    -webkit-box-shadow: 0px 0px 32px -2px var(--shadow-color);
+    -moz-box-shadow: 0px 0px 32px -2px var(--shadow-color);
+}
+
+.products .most-sold .product:hover .btn-product
+{
+    background-color: var(--red);
+    color: var(--white);
+    box-shadow: 0px 0px 32px -2px var(--shadow-color);
+    -webkit-box-shadow: 0px 0px 32px -2px var(--shadow-color);
+    -moz-box-shadow: 0px 0px 32px -2px var(--shadow-color);
+}
+
+.products .most-sold .product:hover .btn-product a
+{
+    color: var(--white);
+}
+
+.products .most-sold .product:hover .title-product
+{
+    color: var(--red);
+    text-shadow: 4px 12px 4px var(--shadow-color-gray);
+}
+
+.products .most-sold .product .image
+{
+    text-align: center;
+    width: 50%;
+}
+
+
+.products .most-sold .product .image img
+{
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width:800px)
 {
