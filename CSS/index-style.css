@@ -23,6 +23,7 @@ body
     --gray2: rgb(77, 77, 77);
     --gray3: rgb(102, 102, 102);
     --gray4: rgb(232, 232, 232);
+    --gray5: rgb(204, 204, 204);
 }
 
 .header .navbar
@@ -159,7 +160,7 @@ body
     align-items: center;
     justify-content: center;
     height: 91vh;
-    color: var(--gray2);
+    width: 100%;
 }
 
 /* SECTION PRODUCTS ========================================================================================================== */
@@ -445,6 +446,11 @@ body
     transition: 0.5s;
 }
 
+.shops .grid-shops .shop-logo img
+{   
+    width: 40%;
+}
+
 .shops .grid-shops .shop-logo span
 {
     font-size: 3em;
@@ -487,11 +493,16 @@ body
 .gallery .grid-gallery .item
 {
     background-color: var(--gray);
-    height: 300px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.5s;
+}
+
+.gallery .grid-gallery .item img
+{
+    width: 100%;
 }
 
 .gallery .grid-gallery .item:hover
@@ -530,38 +541,112 @@ body
     font-size: 2em;
 }
 
+.aliance .logo-container .logo img
+{
+    width: 100%;
+}
+
 /* SECTION QUOTES PROJECTS AND NEXT PROJECTS ========================================================================================================== */
 .quote-project
 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.quote-project .btn{
+    width: 50%;
     height: 50vh;
-}
-
-.quote-project .quote{
-    width: 50%;
     padding: 15%;
     background-color: var(--gray4);
     color: var(--gray2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     font-size: 3em;
-}
-
-.quote-project .next-project
-{
-    width: 50%;
-    padding: 15%;
-    background-color: var(--gray4);
-    color: var(--gray2);
-    text-align: center;
-    font-size: 3em;
+    transition: 0.5s;
 }
 
 .quote-project .btn:hover
 {
     background-color: var(--gray3);
+    color: var(--white);
 }
+
+/* SECTION FOOTER ========================================================================================================== */
+.footer
+{
+    padding: 1% 0% 0% 0%;
+    background-color: var(--white);
+}
+
+.footer .footer-content
+{
+    background-color: var(--gray5);
+    padding: 3% 0% 0% 0%;
+}
+
+.footer .footer-content .footer-quick-access
+{
+    display: flex;
+    margin-bottom: 8%;
+}
+
+.footer .footer-content .footer-quick-access ul
+{
+    margin-left: 10%;
+    list-style: none;
+}
+
+.footer .footer-content .footer-quick-access ul .tittle
+{
+    color: var(--gray3);
+    font-size: 0.8em;
+}
+
+.footer .footer-content .footer-quick-access ul .item
+{
+    margin-bottom: 10px;
+}
+
+.footer .footer-content .footer-quick-access ul .item a
+{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.2em;
+}
+
+.footer .footer-content .footer-policies
+{
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    padding-left: 10%;
+}
+
+.footer .footer-content .footer-policies ul
+{
+    display: flex;
+    list-style: none;
+    width: 100%;
+}
+
+.footer .footer-content .footer-policies li
+{
+    margin: 1% 2% 1% 0%;
+}
+
+.footer .footer-content .footer-policies li a
+{
+    text-decoration: none;
+    color: var(--gray3);
+    font-size: 1.3em;
+}
+
+
+
+
 
 
 
@@ -666,4 +751,10 @@ body
         margin-left: auto;
         border-left: 1px solid var(--red);
     }
+
+    .cover img
+    {
+        width: 100%;
+    }
+    
 }
