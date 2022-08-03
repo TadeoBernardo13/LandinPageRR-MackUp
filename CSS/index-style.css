@@ -22,6 +22,7 @@ body
     --gray: rgb(242, 242, 242);
     --gray2: rgb(77, 77, 77);
     --gray3: rgb(102, 102, 102);
+    --gray4: rgb(232, 232, 232);
 }
 
 .header .navbar
@@ -343,6 +344,232 @@ body
 {
     width: 80%;
 }
+
+/* SECTION SYSTEMS ========================================================================================================== */
+.systems
+{
+    height: 110vh;
+    padding: 0% 7%;
+    background-color: var(--white);
+}
+
+.systems h1
+{
+    font-size: 5em;
+    color: var(--gray2);
+}
+
+.systems span
+{
+    color: var(--gray3);
+    font-size: 1.4em;
+}
+
+.systems .grid-systems
+{
+    margin-top: 4%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    padding: 10px;
+}
+
+.systems .grid-systems .sys
+{   
+    border: 3px solid var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    transition: 0.5s;
+}
+
+.systems .grid-systems .sys span
+{
+    font-size: 3em;
+}
+
+.systems .grid-systems .sys img
+{
+    width: 40%;
+}
+
+.systems .grid-systems .sys:hover
+{
+    border-radius: 10px;
+    background-color: var(--red);
+    transform: scale(1.1);
+}
+
+.systems .grid-systems .sys:hover span
+{
+    color: var(--white);
+}
+
+/* SECTION SHOPS ========================================================================================================== */
+.shops
+{
+    height: 110vh;
+    padding: 2% 7%;
+    background-color: var(--gray);
+}
+
+.shops h1
+{
+    font-size: 5em;
+    color: var(--gray2);
+}
+
+.shops span
+{
+    color: var(--gray3);
+    font-size: 1.4em;
+}
+
+.shops .grid-shops
+{
+    margin-top: 4%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    padding: 10px;
+}
+
+.shops .grid-shops .shop-logo
+{   
+    border: 1px solid var(--gray2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    transition: 0.5s;
+}
+
+.shops .grid-shops .shop-logo span
+{
+    font-size: 3em;
+}
+
+.shops .grid-shops .shop-logo:hover
+{
+    border-radius: 10px;
+    background-color: var(--red);
+    transform: scale(1.1);
+}
+
+.shops .grid-shops .shop-logo:hover span
+{
+    color: var(--white);
+}
+
+/* SECTION GALLERY ========================================================================================================== */
+.gallery
+{
+    background-color: var(--white);
+    padding: 4% 7%;
+}
+
+.gallery h1
+{
+    font-size: 5em;
+    color: var(--gray2);
+}
+
+.gallery .grid-gallery
+{
+    margin-top: 4%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    padding: 10px;
+}
+
+.gallery .grid-gallery .item
+{
+    background-color: var(--gray);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.gallery .grid-gallery .item:hover
+{
+    transform: scale(1.1);
+}
+
+/* SECTION ALIANCES ========================================================================================================== */
+.aliance
+{
+    padding: 4% 7%;
+    background-color: var(--gray);
+}
+
+.aliance h1
+{
+    font-size: 5em;
+    color: var(--gray2);
+}
+
+.aliance span
+{
+    color: var(--gray3);
+    font-size: 1.4em;
+}
+
+.aliance .logo-container
+{
+    margin: 10% 0%;
+    display: flex;
+}
+
+.aliance .logo-container .logo
+{
+    margin-right: 15%;
+    font-size: 2em;
+}
+
+/* SECTION QUOTES PROJECTS AND NEXT PROJECTS ========================================================================================================== */
+.quote-project
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.quote-project .quote{
+    width: 50%;
+    padding: 15%;
+    background-color: var(--gray4);
+    color: var(--gray2);
+    text-align: center;
+    font-size: 3em;
+}
+
+.quote-project .next-project
+{
+    width: 50%;
+    padding: 15%;
+    background-color: var(--gray4);
+    color: var(--gray2);
+    text-align: center;
+    font-size: 3em;
+}
+
+.quote-project .btn:hover
+{
+    background-color: var(--gray3);
+}
+
+
+
+
+
+
+
+
 
 
 
