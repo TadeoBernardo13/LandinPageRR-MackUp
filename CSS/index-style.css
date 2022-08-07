@@ -229,8 +229,6 @@ body
 
 .products .most-sold .product
 {
-    display: flex;
-    flex-direction: row;
     padding: 3% 5%;
     margin: 3% 8% 5% 8%;
     height: 80vh;
@@ -238,13 +236,19 @@ body
     transition: 0.5s;
 }
 
-.products .most-sold .product .info .title-product
+.products .most-sold .product .container
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.products .most-sold .product .title-product
 {
     font-size: 5em;
     color: var(--gray3);
 }
 
-.products .most-sold .product .info .info-product
+.products .most-sold .product .info-product
 {
     font-size: 1.4em;
     color: var(--gray2);
@@ -258,14 +262,13 @@ body
 .products .most-sold .product .info .specs
 {
     display: grid;
-    grid-template-columns: repeat(4, 2fr);
+    grid-template-columns: repeat(4, 25%);
     grid-template-rows: repeat(2, 2fr);
+    gap: 10px;
 }
-/* .products .most-sold .product .info .specs
+
+.products .most-sold .product .info .specs
 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     margin-top: 5%;
     font-size: 0.8em;
 }
@@ -275,19 +278,18 @@ body
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 14%;
-    margin: 0% 5% 4% 5%;
     color: var(--gray2);
 }
 
 .products .most-sold .product .info .specs .item-info span
 {
+    margin-top: 8px;
     text-align: center;
-}*/
+}
 
 .products .most-sold .product .info .specs .item-info img
 {
-    width: 90%;
+    width: 50%;
 } */
 
 .products .most-sold .product .info .btn-product
@@ -342,7 +344,9 @@ body
 
 .products .most-sold .product .image
 {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 50%;
 }
 
@@ -773,5 +777,21 @@ body
         width: 90%;    
     }
 /* SECTION MOST SOLD AND PRODUCTS ========================================================================================================== */
+    .products .most-sold .product
+    {
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 
+    .products .most-sold .product .info
+    {
+        order: 2;
+    }  
+
+    .products .most-sold .product .image
+    {
+        order: 1;
+    }      
 }
