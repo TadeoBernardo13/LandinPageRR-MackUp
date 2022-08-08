@@ -780,17 +780,22 @@ body
     .products .most-sold .product
     {
         height: auto;
+    }
+
+    .products .most-sold .product .container
+    {
+        height: auto;
         align-items: center;
         justify-content: center;
         flex-direction: column;
     }
 
-    .products .most-sold .product .info
+    .products .most-sold .product .container .info
     {
         order: 2;
     }  
 
-    .products .most-sold .product .image
+    .products .most-sold .product .container .image
     {
         order: 1;
     }      
