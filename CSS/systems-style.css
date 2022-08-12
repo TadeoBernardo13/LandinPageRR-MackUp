@@ -57,6 +57,7 @@ body
     transition: transform .5s;
     display: flex;
     justify-content: space-evenly;
+    z-index: 1;
 }
 
 .menu-item
@@ -155,11 +156,18 @@ body
     font-size: 2em;
 }
 
-/* ====================================================== */
-.acordion
+/* SECTION SYSTEMS ========================================================================================================== */
+.systems
 {
-    width: 90%;
-    max-width: 1000px;
+    margin-top: 5%;
+    height: auto;
+    padding: 0% 7%;
+    background-color: var(--white);
+}
+
+.systems .acordion
+{
+    width: 100%;
     margin: 2rem auto;
 }
 
@@ -174,6 +182,7 @@ body
 
 .acordion-item-header
 {
+    width: 100%;
     padding: 0.5rem 3rem 0.5rem 1rem;
     min-height: 3.5rem;
     line-height: 1.25rem;
@@ -184,146 +193,92 @@ body
     cursor: pointer;
 }
 
-.acordion-item-header::after
+.acordion-item-header img
 {
-    content: "\002B";
-    font-size: 2rem;
-    position: absolute;
-    right: 1rem;
-}
-
-.acordion-item-header.active::after
-{
-    content: "\2212";
+    width: 20%;
 }
 
 .acordion-item-body
 {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.systems .acordion .acordion-item-body-content
+{   
+    overflow-y: hidden;
     padding: 1rem;
     line-height: 1.5rem;
     border-top: 1px solid;
     border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
 }
 
-.acordion-item-header.active + .acordion-item-body
-{
-    display: block;
-}
-
-/* SECTION SYSTEMS ========================================================================================================== */
-.systems
-{
-    margin-top: 5%;
-    height: auto;
-    padding: 0% 7%;
-    background-color: var(--white);
-}
-
-.systems .acordion
-{
-    width: 100%;
-}
-
-.systems .acordion .sys
-{   
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: 0.5s;
-}
-
-.systems .acordion .sys .label
-{
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-}
-
-.systems .acordion .sys .content
+.systems .acordion .acordion-item-body-content
 {
     position: relative;
     height: 0;
     overflow: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
+    height: auto;
     transition: 0.5s;
 }
 
-.systems .acordion .sys.active .content
+.systems .acordion .acordion-item-body-content .wh-is
 {
-    height: auto;
+    margin-top: 5%;
 }
 
-.systems .acordion .sys.active .content p
+.systems .acordion .acordion-item-body-content .wh-do
+{
+    margin-top: 5%;
+}
+
+.systems .acordion .acordion-item-body-content p
 {
     font-size: 5em;
     color: var(--gray3);
+    margin-bottom: 50px;
 }
 
-.systems .acordion .sys.active .content span
+.systems .acordion .acordion-item-body-content span
 {
     font-size: 1.5em;
     color: var(--gray3);
 }
 
-.systems .acordion .sys .content .container-graphs
+.systems .acordion .acordion-item-body-content .container-graphs
 {
     margin-top: 5%;
     display: flex;
     width: 100%;
 }
 
-.systems .acordion .sys .content .container-graphs .graph img
+.systems .acordion .acordion-item-body-content .container-graphs .graph img
 {
     width: 50%;
 }
 
-.systems .acordion .sys .content .price p
+.systems .acordion .acordion-item-body-content .price p
 {
     font-size: 3em;
 }
 
-.systems .acordion .sys .content .price span
+.systems .acordion .acordion-item-body-content .price span
 {
     font-size: 1.5em;
 }
 
-.systems .acordion .sys .content .examples
+.systems .acordion .acordion-item-body-content .examples
 {
     display: flex;
     width: 100%;
 }
 
-.systems .acordion .sys .content .examples .example img
+.systems .acordion .acordion-item-body-content .examples .example img
 {
     width: 50%;
 }
-
-.systems .acordion .sys span
-{
-    font-size: 3em;
-}
-
-.systems .acordion .sys img
-{
-    width: 100%;
-}
-
-/* .systems .acordion .sys:hover
-{
-    border-radius: 10px;
-    background-color: var(--red);
-    transform: scale(1.1);
-}
-
-.systems .acordion .sys:hover span
-{
-    color: var(--white);
-} */
 
 /* SECTION FOOTER ========================================================================================================== */
 .footer
@@ -484,5 +439,120 @@ body
         width: 90%;
         margin-left: auto;
         border-left: 1px solid var(--red);
+    }
+}
+
+@media (max-width:400px)
+{
+    .menu-hamburguer
+    {
+        display: flex;
+    }
+    
+    .menu-link--active
+    {
+        --transform: rotate(0);
+        --background: rbg(138, 37, 38);
+    }
+
+    .menu-item--show
+    {
+        background-color: var(--background);
+    }
+
+    .menu-links
+    {
+        position: fixed;
+        max-width: 300px;
+        width: 100%;
+        top: 6vh;
+        bottom: 0;
+        right: 0;
+        background-color: var(--white);
+        overflow-y: auto;
+        display: grid;
+        grid-auto-rows: max-content;
+        transform: translate(100%);
+    }
+
+    .menu-links--show
+    {
+        transform: unset;
+        width: 100%;
+    }
+
+    .menu-item
+    {
+        width: 100%;
+        --clip:0;
+        overflow: hidden;
+    }
+
+    .menu-link
+    {
+        padding: 25px 0;
+        padding-left: 30px;
+        height: auto;
+    }
+
+    .menu-link .fa
+    {
+        margin-right: 2vw;
+        margin-left: 35.2vw;
+    }
+
+    .menu-nesting
+    {
+        display: grid;
+        position: unset;
+        width: 100%;
+        transform: translateY(0);
+        height: 0;
+        transition: height .3s;
+    }
+
+    .menu-link--inside
+    {
+        width: 90%;
+        margin-left: auto;
+        border-left: 1px solid var(--red);
+    }
+
+    /* SECTION SYSTEMS ========================================================================================================== */
+    .systems .acordion .acordion-item-body-content p
+    {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+
+    .systems .acordion .acordion-item-body-content span
+    {
+        font-size: 0.7em;
+    }
+
+    .systems .acordion .acordion-item-body-content .price p
+    {
+        font-size: 1.5em;
+    }
+
+    .systems .acordion .acordion-item-body-content .price span
+    {
+        font-size: 1em;
+    }
+
+    /*SECTION FOOTER ========================================================================== */
+    .footer .footer-content .footer-quick-access ul .tittle
+    {
+        font-size: 0.4em;
+    }
+
+    .footer .footer-content .footer-quick-access ul .item a
+    {
+        font-size: 0.6em;
+    }
+
+    .footer .footer-content .footer-policies li a
+    {
+        font-size: 0.6em;
     }
 }

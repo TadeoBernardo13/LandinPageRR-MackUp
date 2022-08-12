@@ -807,3 +807,335 @@ body
         width: 70%;
     }
 }
+
+@media (max-width:400px)
+{
+    .menu-hamburguer
+    {
+        display: flex;
+    }
+    
+    .menu-link--active
+    {
+        --transform: rotate(0);
+        --background: rbg(138, 37, 38);
+    }
+
+    .menu-item--show
+    {
+        background-color: var(--background);
+    }
+
+    .menu-links
+    {
+        position: fixed;
+        max-width: 300px;
+        width: 100%;
+        top: 6vh;
+        bottom: 0;
+        right: 0;
+        background-color: var(--white);
+        overflow-y: auto;
+        display: grid;
+        grid-auto-rows: max-content;
+        transform: translate(100%);
+    }
+
+    .menu-links--show
+    {
+        transform: unset;
+        width: 100%;
+    }
+
+    .menu-item
+    {
+        width: 100%;
+        --clip:0;
+        overflow: hidden;
+    }
+
+    .menu-link
+    {
+        padding: 25px 0;
+        padding-left: 30px;
+        height: auto;
+    }
+
+    .menu-link .fa
+    {
+        margin-right: 2vw;
+        margin-left: 35.2vw;
+    }
+
+    .menu-nesting
+    {
+        display: grid;
+        position: unset;
+        width: 100%;
+        transform: translateY(0);
+        height: 0;
+        transition: height .3s;
+    }
+
+    .menu-link--inside
+    {
+        width: 90%;
+        margin-left: auto;
+        border-left: 1px solid var(--red);
+    }
+
+    /* SECTION COVER ========================================================================================================== */
+    .cover
+    {
+        height: 50vh;
+    }
+
+    /* SECTION PRODUCTS ========================================================================================================== */
+    .products
+    {
+        height: auto;
+    }
+
+    .products .btn-products
+    {
+        width: 100%;
+    }
+
+    .products .btn
+    {
+        width: 20%;
+    }
+
+    .products .btn a
+    {
+        font-size: 0.6em;
+    }
+
+    .products .btn img
+    {
+        width: 70%;    
+    }
+
+    /* SECTION MOST SOLD AND PRODUCTS ========================================================================================================== */
+    .products .most-sold .title-ms
+    {
+        font-size: 2.5em;
+        margin: auto;
+    }
+
+    .products .most-sold .product
+    {
+        padding: 3% 5%;
+        margin: 10px 10px;
+        height: auto;
+        background-color: var(--gray);
+        transition: 0.5s;
+    }
+
+    .products .most-sold .product .title-product
+    {
+        font-size: 2.5em;
+    }
+
+    .products .most-sold .product .info-product
+    {
+        font-size: 0.7em;
+    }
+
+    .products .most-sold .product .info
+    {
+        width: 90%;
+    }
+
+    .products .most-sold .product .info .specs
+    {
+        margin-top: 5%;
+        margin-bottom: 10%;
+        font-size: 0.65em;
+    }
+
+    .products .most-sold .product .info .btn-product
+    {
+        width: 60%;
+    }
+
+    .products .most-sold .product:hover
+    {
+        background-color: var(--white);
+        transform: scale(1.01);
+        box-shadow: 0px 0px 32px -2px var(--shadow-color);
+        -webkit-box-shadow: 0px 0px 32px -2px var(--shadow-color);
+        -moz-box-shadow: 0px 0px 32px -2px var(--shadow-color);
+    }
+
+    .products .most-sold .product .image
+    {
+        width: 100%;
+    }
+
+    /* SECTION SYSTEMS ========================================================================================================== */
+    .systems
+    {
+        height: auto;
+    }
+
+    .systems h1
+    {
+        font-size: 2.5em;
+    }
+
+    .systems span
+    {
+        font-size: 0.7em;
+    }
+
+    .systems .grid-systems
+    {
+        margin-top: 4%;
+        display: grid;
+        grid-template-rows:    repeat(4, 2fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .systems .grid-systems .sys
+    {   
+        border: 3px solid var(--gray);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        transition: 0.5s;
+    }
+
+    .systems .grid-systems .sys span
+    {
+        font-size: 1.5em;
+    }
+
+    .systems .grid-systems .sys img
+    {
+        width: 100%;
+    }
+
+    /* SECTION SHOPS ========================================================================================================== */
+    .shops
+    {
+        height: auto;
+        padding: 0% 7%;
+    }
+
+    .shops h1
+    {
+        font-size: 2.5em;
+    }
+
+    .shops span
+    {
+        font-size: 0.7em;
+    }
+
+    .shops .grid-shops
+    {
+        margin-top: 2%;
+        display: grid;
+        grid-template-rows:    repeat(4, 2fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .shops .grid-shops .shop-logo
+    {  
+        height: 100px;
+    }
+
+    .shops .grid-shops .shop-logo img
+    {   
+        width: 100%;
+    }
+
+    .shops .grid-shops .shop-logo span
+    {
+        font-size: 1.5em;
+    }
+
+    /* SECTION GALLERY ========================================================================================================== */
+    .gallery
+    {
+        padding: 4% 7%;
+    }
+
+    .gallery h1
+    {
+        font-size: 2.5em;
+    }
+
+    .gallery .grid-gallery .item
+    {
+        height: 100px;
+    }
+
+    /* SECTION ALIANCES ========================================================================================================== */
+    .aliance
+    {
+        padding: 4% 7%;
+        background-color: var(--gray);
+    }
+
+    .aliance h1
+    {
+        font-size: 2.5em;
+    }
+
+    .aliance span
+    {
+        font-size: 0.7em;
+    }
+
+    .aliance .logo-container
+    {
+        width: 100%;
+    }
+
+    .aliance .logo-container .logo
+    {
+        margin-right: 15%;
+        width: 200px;
+    }
+
+    .aliance .logo-container .logo img
+    {
+        width: 200%;
+    }
+
+    /* SECTION QUOTES PROJECTS AND NEXT PROJECTS ========================================================================================================== */
+    .quote-project .btn{
+        width: 50%;
+        height: 20vh;
+        font-size: 1em;
+        transition: 0.5s;
+    }
+
+    /*SECTION FOOTER ========================================================================== */
+    .footer
+    {
+        height: auto;
+    }
+
+    .footer .footer-content .footer-quick-access ul .tittle
+    {
+        font-size: 0.4em;
+    }
+
+    .footer .footer-content .footer-quick-access ul .item a
+    {
+        font-size: 0.6em;
+    }
+
+    .footer .footer-content .footer-policies li a
+    {
+        font-size: 0.6em;
+    }
+}
