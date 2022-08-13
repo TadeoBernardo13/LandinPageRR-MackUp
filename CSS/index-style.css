@@ -64,35 +64,6 @@ body
     list-style: none;
     position: relative;
     height: 100%;
-    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
-    --transform: rotate(-180deg);
-}
-
-.menu-item:hover
-{
-    --transform: rotate(0);
-    --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-}
-
-.menu-link .fa
-{
-    transform: var(--transform);
-    transition: transform .5s;
-    display: block;
-    margin-left: 0.7em;
-}
-
-.menu-nesting
-{
-    list-style: none;
-    transition: clip-path .3s;
-    position: absolute;
-    clip-path: var(--clip);
-    right: 0;
-    bottom: 0;
-    width: max-content;
-    transform: translateY(100%);
-    background-color: var(--red);
 }
 
 .menu-link span
@@ -108,24 +79,14 @@ body
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 10%;
+    height: 0%;
     background-color: var(--red);
-    transition: height 0.5s;
+    transition: height 0.1s;
 }
 
 .menu-link:hover::before
 {
-   height: 100%;
-}
-
-.menu-link--inside
-{
-    padding: 5em 3em 1em .5em;
-}
-
-.menu-link--inside:hover
-{
-    background-color: var(--white);
+   height: 10%;
 }
 
 .menu-link 
@@ -829,7 +790,7 @@ body
     .menu-links
     {
         position: fixed;
-        max-width: 300px;
+        max-width: 200px;
         width: 100%;
         top: 6vh;
         bottom: 0;
