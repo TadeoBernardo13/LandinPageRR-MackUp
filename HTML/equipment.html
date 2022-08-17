@@ -50,11 +50,11 @@
                     <a class="menu-link" href="#"><span>TÓTEMS</span></a>
                 </li>
 
-                <li class="menu-item menu-item--show">
+                <li class="menu-item">
                     <a class="menu-link" href="#"><span>RACKS</span></a>
                 </li>
 
-                <li class="menu-item menu-item--show">
+                <li class="menu-item">
                     <a class="menu-link" href="#"><span>EXPENDEDORAS</span></a>
                 </li>
 
@@ -69,6 +69,39 @@
                     <a class="menu-link" href="#"><span>MÁS</span></a>
                 </li>
             </ul>
+        </div>
+    </section>
+
+    <section class="equipment">
+        <div class="carrousel">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+            <input type="radio" name="slider" id="item-4">
+            <input type="radio" name="slider" id="item-5">
+
+            <div class="cards">
+                <label class="card" for="item-1" id="selector-1">
+                    <img src="/ASSESTS/Totem.png">
+                    <h1>TÓTEMS</h1>
+                </label>
+                <label class="card" for="item-2" id="selector-2">
+                    <img src="/ASSESTS/Casillero.png">
+                    <h1>RACKS</h1>
+                </label>
+                <label class="card" for="item-3" id="selector-3">
+                    <img src="/ASSESTS/MaquinaExpendedora.png">
+                    <h1>EXPENDEDORAS</h1>
+                </label>
+                <!-- <label class="card" for="item-4" id="selector-4">
+                    <img src="/ASSESTS/gadget-placeholder.png">
+                    <h1>GADGETS</h1>
+                </label>
+                <label class="card" for="item-5" id="selector-5">
+                    <img src="/ASSESTS/placeholder.png">
+                    <h1>BANDAS</h1>
+                </label> -->
+            </div>
         </div>
     </section>
 
@@ -143,4 +176,19 @@
     </section>
 </body>
 <script src="/JS/menu.js"></script>
+<script>
+    let list = document.querySelectorAll(".second-navbar .navbar li");
+    let test = document.querySelectorAll(".btn");
+		function activeLink() {
+			list.forEach((item) => item.classList.remove("active"));
+			this.classList.add("active");
+		}
+        function activeTest() {
+            test.forEach((item) => item.classList.remove("active"));
+			this.classList.add("active");
+        }
+		list.forEach((item) => item.addEventListener("mouseover", activeLink));
+
+        list.forEach((item) => item.addEventListener('click', activeTest));
+</script>
 </html>
