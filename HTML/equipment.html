@@ -106,6 +106,27 @@
     </section>
 
     <section class="products">
+        <section class="racks">
+            <div class="btn">
+                <a class="btn-a" href="#">
+                    <img src="/ASSESTS/icon-placeholder.png" alt="">
+                    <span>Tótems</span>
+                </a>
+            </div>
+            <div class="btn">
+                <a class="btn-a" href="#">
+                    <img src="/ASSESTS/icon-placeholder.png" alt="">
+                    <span>Racks</span>
+                </a>
+            </div>
+            <div class="btn">
+                <a class="btn-a" href="#">
+                    <img src="/ASSESTS/icon-placeholder.png" alt="">
+                    <span>Expendedoras</span>
+                </a>
+            </div>
+        </section>
+        
         <section class="btn-products">
             <div class="btn">
                 <a class="btn-a" href="#">
@@ -177,18 +198,21 @@
 </body>
 <script src="/JS/menu.js"></script>
 <script>
-    let list = document.querySelectorAll(".second-navbar .navbar li");
-    let test = document.querySelectorAll(".btn");
-		function activeLink() {
-			list.forEach((item) => item.classList.remove("active"));
-			this.classList.add("active");
-		}
-        function activeTest() {
-            test.forEach((item) => item.classList.remove("active"));
-			this.classList.add("active");
-        }
-		list.forEach((item) => item.addEventListener("mouseover", activeLink));
+    (function(){
+        const list = document.querySelectorAll(".second-navbar .navbar .menu-item");
 
-        list.forEach((item) => item.addEventListener('click', activeTest));
+        function activeLink() {
+            list.forEach((item) => item.classList.remove("menu-link--active"));
+            this.classList.add("menu-link--active");
+        }
+        list.forEach((item) => item.addEventListener("mouseover", activeLink));
+
+        function click() {
+            list.forEach((item) => item.classList.remove("active"));
+            this.classList.add("active");
+        }
+
+        list.forEach((item) => item.addEventListener("click", click));
+    })();
 </script>
 </html>
