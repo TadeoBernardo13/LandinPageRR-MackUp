@@ -288,10 +288,20 @@ input[type=radio]
 
 }
 
+.products .racks
+{
+    display: none;    
+}
+
+.products .racks.activeView
+{
+    display: flex;
+}   
+
 .products .btn-products
 {
-    display: none;
-    /* display: flex; */
+    /* display: none; */
+    display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
@@ -331,6 +341,7 @@ input[type=radio]
 {
     width: 50%;    
 }
+
 
 /* SECTION FOOTER ========================================================================================================== */
 .footer
