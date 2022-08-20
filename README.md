@@ -31,4 +31,13 @@
 
 ## °PREVIEW EQUIPMENT°
 ![image](https://user-images.githubusercontent.com/74383773/184460926-a62a4b3d-e5bd-4933-9b0e-ccb3ee504084.png)
+
+## < UPDATE >
+### PROVISIONAL CAROUSEL
+![image](https://user-images.githubusercontent.com/74383773/185704216-90246944-b982-4638-9fb7-9a394ab3bb15.png)
+###TOTEMS MENU LINK
+![image](https://user-images.githubusercontent.com/74383773/185703682-431f22b5-d347-43d4-81f7-7ca3fbc2f99c.png)
+###RACKS MENU LINK
+![image](https://user-images.githubusercontent.com/74383773/185703821-d63ca01e-a325-4ef2-9511-bf9b456b303d.png)
+
 ### DON'T HAVE A MOBILE RESPONSIVE VIEW YET
