@@ -308,7 +308,12 @@ input[type=radio]
 
 .products .racks
 {
-    display: none;    
+    display: none;  
+}
+.products .racks.activeView
+{
+    display: flex;
+    flex-direction: column;  
 }
 
 .products .expend
@@ -376,6 +381,51 @@ input[type=radio]
 {
     text-decoration: none;
 }
+
+.products .activeView .container h1
+{
+    text-align: center;
+}
+
+.products .activeView .container .images
+{
+    max-width: 100vw;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.products .activeView .container .images img
+{
+    width: 20%;
+    margin: 15px;
+}
+
+.products .activeView .container .caracteristicas-container
+{
+    display: flex;
+    padding: 3% 6%;
+    background-color: var(--gray);
+}
+.products .activeView .container .caracteristicas-container img
+{
+    width: 40%;
+}
+.products .activeView .container .caracteristicas-container .caracteristicas
+{
+    width: 50%;
+}
+.products .activeView .container .caracteristicas-container .caracteristicas .container-graphs
+{
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+}
+.products .activeView .container .caracteristicas-container .caracteristicas .container-graphs .graph img
+{
+    width: 50%;
+}
+
 
 .products .btn
 {

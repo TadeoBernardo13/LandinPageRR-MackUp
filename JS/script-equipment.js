@@ -79,6 +79,7 @@ expend.addEventListener("click", classAddClickExpend);
 gadgets.addEventListener("click", classAddClickGadgets);
 bandas.addEventListener("click", classAddClickBandas);
 
+/* BOTONES DE CADA MENU LINK /////////////////////////////////////////////////////////////////////////////////////////// */
 function clickBtnsGroup() {
     listBtns.forEach((item) => item.classList.remove("active"));
     this.classList.add("active");
