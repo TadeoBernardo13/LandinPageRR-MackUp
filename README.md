@@ -31,6 +31,8 @@
 
 ## °PREVIEW EQUIPMENT°
 ![image](https://user-images.githubusercontent.com/74383773/184460926-a62a4b3d-e5bd-4933-9b0e-ccb3ee504084.png)
+![image](https://user-images.githubusercontent.com/74383773/185728860-1907202c-6899-4dcf-82d5-d4395e9c9579.png)
+![image](https://user-images.githubusercontent.com/74383773/185728863-6382d570-bbcb-4595-be32-bcacf69d55ae.png)
 
 ## < UPDATE >
 ### PROVISIONAL CAROUSEL
@@ -39,5 +41,9 @@
 ![image](https://user-images.githubusercontent.com/74383773/185703682-431f22b5-d347-43d4-81f7-7ca3fbc2f99c.png)
 ###RACKS MENU LINK
 ![image](https://user-images.githubusercontent.com/74383773/185703821-d63ca01e-a325-4ef2-9511-bf9b456b303d.png)
+
+###Racks view when press the button of "conoce más"
+![image](https://user-images.githubusercontent.com/74383773/185728773-0de4211c-3835-4c1b-b898-afcc75c66aa1.png)
+
 
 ### DON'T HAVE A MOBILE RESPONSIVE VIEW YET
