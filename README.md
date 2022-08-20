@@ -40,4 +40,9 @@
 ###RACKS MENU LINK
 ![image](https://user-images.githubusercontent.com/74383773/185703821-d63ca01e-a325-4ef2-9511-bf9b456b303d.png)
 
+###Racks view when press the button "conoce más"
+![image](https://user-images.githubusercontent.com/74383773/185728773-0de4211c-3835-4c1b-b898-afcc75c66aa1.png)
+![image](https://user-images.githubusercontent.com/74383773/185728860-1907202c-6899-4dcf-82d5-d4395e9c9579.png)
+![image](https://user-images.githubusercontent.com/74383773/185728863-6382d570-bbcb-4595-be32-bcacf69d55ae.png)
+
 ### DON'T HAVE A MOBILE RESPONSIVE VIEW YET
