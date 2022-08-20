@@ -117,7 +117,7 @@ body
 }
 
 /* SECOND NAVBAR SECTION ===================================================================================================== */
-.navbar
+.nd-navbar
 {
     width: 100vw;
     height: 6vh;
@@ -131,17 +131,17 @@ body
     -moz-box-shadow: 0px 8px 14px -3px var(--shadow-color);
 }
 
-.second-navbar .navbar .cont-logo
+.second-navbar .nd-navbar .cont-logo
 {
     margin-left: 2em;
 }
 
-.second-navbar .navbar .cont-logo img
+.second-navbar .nd-navbar .cont-logo img
 {
     height: 4vh;
 }
 
-.second-navbar .navbar .menu-links
+.second-navbar .nd-navbar .nd-menu-links
 {
     height: 100%;
     width: 100%;
@@ -150,19 +150,19 @@ body
     justify-content: space-evenly;
 }
 
-.second-navbar .navbar .menu-item
+.second-navbar .nd-navbar .nd-menu-item
 {
     list-style: none;
     position: relative;
     height: 100%;
 }
 
-.second-navbar .navbar .menu-link span
+.second-navbar .nd-navbar .nd-menu-link span
 {
     position: relative;
 }
 
-.second-navbar .navbar .menu-link::before
+.second-navbar .nd-navbar .nd-menu-link::before
 {
     content: '';
     position: absolute;
@@ -174,12 +174,12 @@ body
     transition: height 0.1s;
 }
 
-.second-navbar .navbar .menu-link:hover::before
+.second-navbar .nd-navbar .nd-menu-link:hover::before
 {
    height: 10%;
 }
 
-.second-navbar .navbar .menu-link 
+.second-navbar .nd-navbar .nd-menu-link 
 {
     color: var(--white);
     text-decoration: none;
@@ -190,17 +190,31 @@ body
     position: relative;
 }
 
-.second-navbar .navbar .menu-hamburguer
+.second-navbar .nd-navbar .nd-menu-links::before
 {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 15px;
-    cursor: pointer;
-    display: none;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: var(--white);
+    transition: height 0.1s;
 }
 
-/* SECOND NAVBAR SECTION ===================================================================================================== */
+.second-navbar .nd-navbar .nd-menu-links .active::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: var(--white);
+    transition: height 0.1s;
+}
+
+/* PROVISIONAL CAROUSEL ===================================================================================================== */
 .equipment
 {
     width: 100%;
@@ -284,8 +298,12 @@ input[type=radio]
 .products
 {
     background-color: var(--white);
-    height: 320vh;
+    height: auto;
+}
 
+.products .totems
+{
+    display: none;
 }
 
 .products .racks
@@ -293,19 +311,70 @@ input[type=radio]
     display: none;    
 }
 
-.products .racks.activeView
+.products .expend
 {
-    display: flex;
-}   
+    display: none;    
+}
 
-.products .btn-products
+.products .gadgets
 {
-    /* display: none; */
+    display: none;    
+}
+
+.products .bandas
+{
+    display: none;    
+}
+
+.products .activeView
+{
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
+    height: auto;
     padding-top: 10px;
+}
+
+.products .activeView .btns-group
+{
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.products .activeView .btns-group .menu-btns
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.products .activeView .btns-group .menu-btns .model
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    height: 450px;
+    margin: 0% 1%;
+    border: 1px solid black;
+}
+
+.products .activeView .btns-group .menu-btns .model img
+{
+    width: 50%;
+}
+
+.products .activeView .btns-group .menu-btns .model a
+{
+    text-decoration: none;
 }
 
 .products .btn
