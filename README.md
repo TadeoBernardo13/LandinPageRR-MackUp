@@ -34,15 +34,18 @@
 
 ## < UPDATE >
 ### PROVISIONAL CAROUSEL
-![image](https://user-images.githubusercontent.com/74383773/185704216-90246944-b982-4638-9fb7-9a394ab3bb15.png)
+![image](https://user-images.githubusercontent.com/74383773/186019636-9c2ba900-f9f7-495a-8fc7-977931ac620d.png)
 ###TOTEMS MENU LINK
 ![image](https://user-images.githubusercontent.com/74383773/185703682-431f22b5-d347-43d4-81f7-7ca3fbc2f99c.png)
 ###RACKS MENU LINK
-![image](https://user-images.githubusercontent.com/74383773/185703821-d63ca01e-a325-4ef2-9511-bf9b456b303d.png)
+![image](https://user-images.githubusercontent.com/74383773/186019752-bcfa9e69-0470-4bb5-b6e1-1af1b9f057af.png)
 
 ###Racks view when press the button "conoce más"
-![image](https://user-images.githubusercontent.com/74383773/185728773-0de4211c-3835-4c1b-b898-afcc75c66aa1.png)
-![image](https://user-images.githubusercontent.com/74383773/185728860-1907202c-6899-4dcf-82d5-d4395e9c9579.png)
-![image](https://user-images.githubusercontent.com/74383773/185728863-6382d570-bbcb-4595-be32-bcacf69d55ae.png)
+![image](https://user-images.githubusercontent.com/74383773/186019812-2ecf5f8b-ffa4-4973-ac44-2b4023eb35c5.png)
+![image](https://user-images.githubusercontent.com/74383773/186019866-0d1dea2b-1c0c-4c2a-885c-19ede96fbdf1.png)
+![image](https://user-images.githubusercontent.com/74383773/186019955-5442c036-4955-4244-8d3e-b6b0caa44797.png)
+![image](https://user-images.githubusercontent.com/74383773/186019988-2655b606-f8f0-48db-a13c-0c43a53049c3.png)
+![image](https://user-images.githubusercontent.com/74383773/186020022-a8315c91-78fb-454d-83af-bdb606dd9a14.png)
+
 
 ### DON'T HAVE A MOBILE RESPONSIVE VIEW YET
