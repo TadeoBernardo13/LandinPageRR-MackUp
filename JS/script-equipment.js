@@ -30,7 +30,7 @@ function click() {
     racksView.classList.remove("activeView");
     expendView.classList.remove("activeView");
     gadgetsView.classList.remove("activeView");
-    bandas.classList.remove("activeView");
+    bandasView.classList.remove("activeView");
     listBtns.forEach((item) => item.classList.remove("active"));
 }
 
