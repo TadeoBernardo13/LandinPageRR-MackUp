@@ -15,7 +15,11 @@ const gadgetsView = document.querySelector(".products .gadgets");
 const bandas = document.querySelector(".second-navbar .nd-navbar .nd-menu-item.item-bandas");
 const bandasView = document.querySelector(".products .bandas");
 
-const listBtns = document.querySelectorAll(".products .btns-group .model")
+/* BOTONES CONOCE MAS DE CADA MENU LINK /////////////////////////////////////////////////////////////////////////////////////////// */
+const listBtns = document.querySelectorAll(".products .btns-group .model");
+
+const itemOne = document.querySelector(".products .btns-group .modelOne");
+const itemOneView = document.querySelector(".products .racks .container");
 
 function activeLink() {
     list.forEach((item) => item.classList.remove("menu-link--active"));
@@ -32,6 +36,7 @@ function click() {
     gadgetsView.classList.remove("activeView");
     bandasView.classList.remove("activeView");
     listBtns.forEach((item) => item.classList.remove("active"));
+    itemOneView.classList.remove("container-activeView");
 }
 
 list.forEach((item) => item.addEventListener("click", click));
@@ -79,10 +84,21 @@ expend.addEventListener("click", classAddClickExpend);
 gadgets.addEventListener("click", classAddClickGadgets);
 bandas.addEventListener("click", classAddClickBandas);
 
-/* BOTONES DE CADA MENU LINK /////////////////////////////////////////////////////////////////////////////////////////// */
+/* BOTONES CONOCE MAS DE CADA MENU LINK /////////////////////////////////////////////////////////////////////////////////////////// */
 function clickBtnsGroup() {
     listBtns.forEach((item) => item.classList.remove("active"));
     this.classList.add("active");
+    itemOneView.classList.remove("container-activeView");
 }
 
 listBtns.forEach((item) => item.addEventListener("click", clickBtnsGroup));
+
+function classAddItemOne() {
+    if (itemOne.classList.contains("active")) {
+        itemOneView.classList.add("container-activeView");
+    } else {
+        itemOneView.classList.remove("container-activeView");
+    }
+}
+
+itemOne.addEventListener("click", classAddItemOne);
