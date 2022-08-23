@@ -49,3 +49,10 @@
 
 
 ### DON'T HAVE A MOBILE RESPONSIVE VIEW YET
+### PREVIEW OF RESPONSIVE VIEW
+![image](https://user-images.githubusercontent.com/74383773/186256812-05e9d8c4-596f-47a4-b123-dec9046ccefd.png)
+![image](https://user-images.githubusercontent.com/74383773/186256850-3b516204-8386-4c02-ba61-b202327feca3.png)
+![image](https://user-images.githubusercontent.com/74383773/186256974-390ef40c-0bfa-4448-b38e-9f74efea4002.png)
+![image](https://user-images.githubusercontent.com/74383773/186257015-7c83d44b-568e-4e36-b871-1296a0e976fc.png)
+![image](https://user-images.githubusercontent.com/74383773/186257038-f80480f4-3208-4245-a973-59a01901512e.png)
+
