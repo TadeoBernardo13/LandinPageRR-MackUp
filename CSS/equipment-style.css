@@ -299,7 +299,6 @@ input[type=radio]
 {
     background-color: var(--white);
     height: auto;
-    transition: heigth 0.5s ease-in;
 }
 
 .products .totems
@@ -309,6 +308,7 @@ input[type=radio]
 .products .totems.activeView
 {
     display: flex;
+    height: 100%;
     flex-direction: column;
 }
 
@@ -319,22 +319,41 @@ input[type=radio]
 .products .racks.activeView
 {
     display: flex;
+    height: 100%;
     flex-direction: column;
 }
 
 .products .expend
 {
-    display: none;    
+    display: none;   
+}
+.products .expend.activeView
+{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
 }
 
 .products .gadgets
 {
     display: none;    
 }
+.products .gadgets.activeView
+{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
 
 .products .bandas
 {
-    display: none;    
+    display: none;   
+}
+.products .bandas.activeView
+{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
 }
 
 .products .activeView
@@ -351,7 +370,7 @@ input[type=radio]
 .products .activeView .btns-group
 {
     width: 100%;
-    height: 100%;
+    max-height: 100%;
     margin-top: 30px;
     display: flex;
     justify-content: center;
@@ -433,6 +452,12 @@ input[type=radio]
 .products .activeView .container-activeView
 {
     display: block;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    overflow-y: hidden;
+    height: auto;
+    transition: 0.5s;
 }
 
 .products .activeView .container-activeView h2
@@ -841,12 +866,6 @@ input[type=radio]
         height: auto;
     }
 
-    .menu-link .fa
-    {
-        margin-right: 2vw;
-        margin-left: 35.2vw;
-    }
-
     .menu-nesting
     {
         display: grid;
@@ -922,12 +941,6 @@ input[type=radio]
         padding: 25px 0;
         padding-left: 30px;
         height: auto;
-    }
-
-    .menu-link .fa
-    {
-        margin-right: 2vw;
-        margin-left: 35.2vw;
     }
 
     .menu-nesting

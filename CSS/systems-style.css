@@ -379,12 +379,6 @@ body
         height: auto;
     }
 
-    .menu-link .fa
-    {
-        margin-right: 2vw;
-        margin-left: 35.2vw;
-    }
-
     .menu-nesting
     {
         display: grid;
@@ -454,12 +448,6 @@ body
         padding: 25px 0;
         padding-left: 30px;
         height: auto;
-    }
-
-    .menu-link .fa
-    {
-        margin-right: 2vw;
-        margin-left: 35.2vw;
     }
 
     .menu-nesting
