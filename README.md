@@ -50,9 +50,10 @@
 
 ### DON'T HAVE A MOBILE RESPONSIVE VIEW YET
 ### PREVIEW OF RESPONSIVE VIEW
-![image](https://user-images.githubusercontent.com/74383773/186256812-05e9d8c4-596f-47a4-b123-dec9046ccefd.png)
-![image](https://user-images.githubusercontent.com/74383773/186256850-3b516204-8386-4c02-ba61-b202327feca3.png)
-![image](https://user-images.githubusercontent.com/74383773/186256974-390ef40c-0bfa-4448-b38e-9f74efea4002.png)
-![image](https://user-images.githubusercontent.com/74383773/186257015-7c83d44b-568e-4e36-b871-1296a0e976fc.png)
-![image](https://user-images.githubusercontent.com/74383773/186257038-f80480f4-3208-4245-a973-59a01901512e.png)
+![image](https://user-images.githubusercontent.com/74383773/186541664-f54b8f1c-bed5-40da-ba83-4982669eb2cf.png)
+![image](https://user-images.githubusercontent.com/74383773/186541688-dccd05ba-3f93-4a4b-bf71-730d854d3722.png)
+![image](https://user-images.githubusercontent.com/74383773/186541716-f1ff1804-c9b2-4e50-9a4a-8abbf0b5febd.png)
+![image](https://user-images.githubusercontent.com/74383773/186541735-d5201bda-e654-465a-9abe-d942f1a0469b.png)
+![image](https://user-images.githubusercontent.com/74383773/186541747-0593ac9b-4abf-466e-9395-d01430567f64.png)
+## NOTE: All the model of all equipment have the same view 
 
